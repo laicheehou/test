@@ -3,4 +3,4 @@ WORKDIR /app
 COPY requirements.txt ./
 ADD . /app
 RUN pip install -r requirements.txt
-CMD python main.py
+CMD python hello.py
