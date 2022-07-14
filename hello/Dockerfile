@@ -10,4 +10,4 @@ COPY . /app
 
 EXPOSE 8080
 # start the webserver
-RUN python hello.py
+ENTRYPOINT [ "python", "hello.py" ]
