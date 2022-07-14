@@ -10,4 +10,4 @@ COPY . /app
 
 EXPOSE 8080
 # start the webserver
-ENTRYPOINT ["gunicorn", "--bind", "0.0.0.0:8080","hello:app"]
+RUN python hello.py
