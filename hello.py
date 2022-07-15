@@ -1,11 +1,7 @@
-from cloudant import Cloudant
 from flask import Flask, render_template, request, jsonify
-import atexit
-import os
-import json
+from flask import send_from_directory
 
 app = Flask(__name__, static_url_path='')
-
 
 @app.route('/')
 def root():
